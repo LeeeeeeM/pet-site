@@ -7,6 +7,7 @@ import Services from './pages/Services';
 import Vets from './pages/Vets';
 import Appointment from './pages/Appointment';
 import AIAssistantPage from './pages/AIAssistantPage';
+import Dashboard from './pages/Dashboard';
 
 export default function App() {
   return (
@@ -20,6 +21,7 @@ export default function App() {
             <Route path="/vets" element={<Vets />} />
             <Route path="/appointment" element={<Appointment />} />
             <Route path="/ai-assistant" element={<AIAssistantPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
           </Routes>
         </main>
         <Footer />

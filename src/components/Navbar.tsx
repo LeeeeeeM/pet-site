@@ -13,6 +13,7 @@ export default function Navbar() {
     { name: '医疗服务', path: '/services' },
     { name: '专家团队', path: '/vets' },
     { name: 'AI 咨询', path: '/ai-assistant' },
+    { name: '我的预约', path: '/dashboard' },
     { name: '预约挂号', path: '/appointment' },
   ];
 
