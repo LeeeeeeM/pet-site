@@ -1,0 +1,7 @@
+{
+  "name": "PetCare Plus - 宠物医疗健康平台",
+  "description": "专业的宠物医疗服务平台，提供在线预约、专家咨询及AI宠物健康助手。",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
