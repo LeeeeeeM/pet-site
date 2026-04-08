@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { HeartFilled } from '@ant-design/icons';
-import { Stethoscope, Calendar, MessageSquare, Menu, X, Phone } from 'lucide-react';
+import { Stethoscope, Calendar, Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/src/lib/utils';
 

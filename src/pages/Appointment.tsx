@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'motion/react';
-import { Calendar, Clock, User, Phone, Dog, CheckCircle2, List } from 'lucide-react';
+import { CheckCircle2, List } from 'lucide-react';
 import { cn } from '@/src/lib/utils';
 import { usePetCareStore } from '@/src/store/usePetCareStore';
 import { Link } from 'react-router-dom';
@@ -199,12 +199,12 @@ export default function Appointment() {
                   </div>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <button
-                    onClick={() => window.location.href = '/'}
+                  <Link
+                    to="/"
                     className="bg-brand-600 text-white px-8 py-3 rounded-full font-bold"
                   >
                     返回首页
-                  </button>
+                  </Link>
                   <Link
                     to="/dashboard"
                     className="bg-slate-100 text-slate-700 px-8 py-3 rounded-full font-bold flex items-center justify-center gap-2"

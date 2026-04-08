@@ -4,7 +4,8 @@ import { Send, Bot, User, Loader2, AlertCircle } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/src/lib/utils';
 
-const ai = new GoogleGenAI({ apiKey: process.env.GEMINI_API_KEY || '' });
+const geminiApiKey = process.env.GEMINI_API_KEY || '';
+const ai = new GoogleGenAI({ apiKey: geminiApiKey });
 
 interface Message {
   role: 'user' | 'model';
@@ -27,6 +28,10 @@ export default function AIChatAssistant() {
 
   const handleSend = async () => {
     if (!input.trim() || isLoading) return;
+    if (!geminiApiKey) {
+      setMessages(prev => [...prev, { role: 'model', text: '当前未配置 GEMINI API Key，请先在环境变量中设置后再试。' }]);
+      return;
+    }
 
     const userMessage = input.trim();
     setInput('');
@@ -126,7 +131,7 @@ export default function AIChatAssistant() {
             type="text"
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            onKeyPress={(e) => e.key === 'Enter' && handleSend()}
+            onKeyDown={(e) => e.key === 'Enter' && handleSend()}
             placeholder="描述宠物的症状或咨询护理知识..."
             className="flex-1 bg-slate-100 border-none rounded-xl px-4 py-2 text-sm focus:ring-2 focus:ring-brand-500 outline-none"
           />

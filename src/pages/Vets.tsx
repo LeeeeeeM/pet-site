@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'motion/react';
-import { Star, Award, GraduationCap, Calendar } from 'lucide-react';
+import { Star, Award } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const doctors = [
