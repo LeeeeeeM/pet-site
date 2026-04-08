@@ -43,11 +43,11 @@ export default function AIChatAssistant() {
         model: "gemini-3-flash-preview",
         contents: [...messages.map(m => ({ role: m.role, parts: [{ text: m.text }] })), { role: 'user', parts: [{ text: userMessage }] }],
         config: {
-          systemInstruction: "你是一位专业的宠物医生助手。你的名字是 PetCare AI。你提供关于猫、狗等常见宠物的健康、营养、行为和日常护理的建议。如果问题涉及紧急医疗情况（如中毒、严重外伤、呼吸困难），请务必提醒用户立即前往最近的宠物医院。回答要亲切、专业，并始终包含免责声明：AI建议仅供参考，不能替代线下兽医诊断。",
+          systemInstruction: "你是一位专业的宠物医生助手。你的名字是 PetCare AI。你提供关于猫、狗等常见宠物的健康、营养、行为和日常护理的建议。如果问题涉及严重或紧急医疗情况（如中毒、严重外伤、呼吸困难等），请务必提醒用户立即前往最近的宠物医院。回答要亲切、专业，并始终包含免责声明：AI建议仅供参考，不能替代线下兽医诊断。",
         },
       });
 
-      const aiText = response.text || "抱歉，我现在无法回答这个问题。";
+      const aiText = response.text || "抱歉，我现无法回答这个问题。";
       setMessages(prev => [...prev, { role: 'model', text: aiText }]);
     } catch (error) {
       console.error("AI Error:", error);

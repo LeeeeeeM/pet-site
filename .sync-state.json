@@ -1,0 +1,30 @@
+{
+  "lastSyncedSha": "80edbfd80c9dc431b8d071a61aeb87629ccdc942",
+  "files": {
+    ".env.example": "7a550fe79a56f6953f6afc76b0a10864d8956e25",
+    ".gitignore": "5a86d2a8aeff6b6a27008e3e5f15000b27897f78",
+    "README.md": "53ce38a280877d367503578efb04f028d5bfa79c",
+    "index.html": "21dfe6908a2d8e32a249152161fd31127ba93f7b",
+    "metadata.json": "a972fc168200e0311de5a9ac3c26edcc0e726d25",
+    "package-lock.json": "20a0e69ffe27ff8c7287420f542271cdc8336ee0",
+    "package.json": "522f958c592728d468c275182b5a132c199fc729",
+    "src/App.tsx": "eb2ac83a13a2fab74096af107d187001680852da",
+    "src/components/AIChatAssistant.tsx": "247d806b042b7f1403f061672f9e3a70ff09749a",
+    "src/components/Footer.tsx": "c1857b5255b6e10f033f0b371d2bd70fa0e4be0c",
+    "src/components/Navbar.tsx": "05effbe3202b13573ba4562c5460c290a971b356",
+    "src/index.css": "b161093952a30b3f3e9f3eaed3c6e54fb5b861c1",
+    "src/lib/utils.ts": "365058cebd7d2bdb327ca1c081b16e4937e11050",
+    "src/main.tsx": "f14d1d0497675ffcfa2e825e166acbe81f5bd734",
+    "src/pages/AIAssistantPage.tsx": "d8e14b26ea6e943d69c6c7fd2f20ee26ddfc7dcf",
+    "src/pages/Appointment.tsx": "d507b03a9d73ad60c6e7a6924a60c7b00cfadc9c",
+    "src/pages/Dashboard.tsx": "a3518916883cc1176b41748078d19484ef94f01b",
+    "src/pages/Home.tsx": "45a057acac438278acf6d699aeada8e249a4428d",
+    "src/pages/Services.tsx": "8491bf9be35795f7a24ef402d9429d1d63eb85e4",
+    "src/pages/Vets.tsx": "ce303069471e91711a70fc0b6d8c06bad817c7b6",
+    "src/store/usePetCareStore.ts": "61a1b3fc141f19282d6d797042eb9f817b0bea2c",
+    "src/types.ts": "6206778bbc90792553aedde4a709b755dd5d7e33",
+    "tsconfig.json": "d88f175b08822f946e8333471fd7fec70ffffff2",
+    "vite.config.ts": "0506f1b683ccb9cb79b1e1b0e485d18e8926845c"
+  },
+  "lastSyncedAt": "2026-04-08T02:55:09Z"
+}

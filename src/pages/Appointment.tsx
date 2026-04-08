@@ -52,7 +52,7 @@ export default function Appointment() {
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 outline-none"
                       placeholder="例如：旺财"
                       value={formData.petName}
-                      onChange={(e) => setFormData({...formData, petName: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, petName: e.target.value })}
                     />
                   </div>
                   <div>
@@ -61,7 +61,7 @@ export default function Appointment() {
                       {['dog', 'cat', 'other'].map((type) => (
                         <button
                           key={type}
-                          onClick={() => setFormData({...formData, petType: type})}
+                          onClick={() => setFormData({ ...formData, petType: type })}
                           className={cn(
                             "py-3 rounded-xl font-bold transition-all",
                             formData.petType === type 
@@ -79,7 +79,7 @@ export default function Appointment() {
                     <select
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 outline-none"
                       value={formData.service}
-                      onChange={(e) => setFormData({...formData, service: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, service: e.target.value })}
                     >
                       <option value="checkup">常规体检</option>
                       <option value="vaccine">疫苗接种</option>
@@ -112,7 +112,7 @@ export default function Appointment() {
                         type="date"
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 outline-none"
                         value={formData.date}
-                        onChange={(e) => setFormData({...formData, date: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, date: e.target.value })}
                         required
                       />
                     </div>
@@ -121,7 +121,7 @@ export default function Appointment() {
                       <select
                         className="w-full px-4 py-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 outline-none"
                         value={formData.time}
-                        onChange={(e) => setFormData({...formData, time: e.target.value})}
+                        onChange={(e) => setFormData({ ...formData, time: e.target.value })}
                         required
                       >
                         <option value="">选择时间</option>
@@ -139,7 +139,7 @@ export default function Appointment() {
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 outline-none"
                       placeholder="您的姓名"
                       value={formData.ownerName}
-                      onChange={(e) => setFormData({...formData, ownerName: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, ownerName: e.target.value })}
                       required
                     />
                   </div>
@@ -150,7 +150,7 @@ export default function Appointment() {
                       className="w-full px-4 py-3 rounded-xl bg-slate-50 border-none focus:ring-2 focus:ring-brand-500 outline-none"
                       placeholder="您的联系电话"
                       value={formData.phone}
-                      onChange={(e) => setFormData({...formData, phone: e.target.value})}
+                      onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                       required
                     />
                   </div>

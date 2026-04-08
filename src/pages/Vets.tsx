@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom';
 const doctors = [
   {
     name: "张医生",
-    role: "首席兽医师",
+    role: "首席宠物医师",
     specialty: "外科、骨科专家",
     exp: "15年经验",
     image: "https://picsum.photos/seed/doc1/400/400",
-    desc: "擅长各类复杂外科手术，曾赴德国进修，对大型犬骨科疾病有深入研究。"
+    desc: "擅长各种复杂的外科手术，曾赴德国进修，对大型犬骨科疾病有深入研究。"
   },
   {
     name: "李医生",
@@ -18,15 +18,15 @@ const doctors = [
     specialty: "猫科、皮肤病专家",
     exp: "10年经验",
     image: "https://picsum.photos/seed/doc2/400/400",
-    desc: "专注于猫科医学，对顽固性皮肤病和内分泌系统疾病有独到见解。"
+    desc: "专注于猫科医学，对慢性肾衰竭和内分泌系统疾病有独特见解。"
   },
   {
     name: "王医生",
-    role: "全科兽医师",
+    role: "全科宠物医师",
     specialty: "影像学、预防医学",
     exp: "8年经验",
     image: "https://picsum.photos/seed/doc3/400/400",
-    desc: "精通超声及X射线诊断，致力于宠物全生命周期的预防保健。"
+    desc: "精通超声及放射诊断，致力于宠物全生命周期的预防保健。"
   }
 ];
 
