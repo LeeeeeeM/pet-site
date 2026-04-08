@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import { HeartFilled } from '@ant-design/icons';
 import { Stethoscope, Calendar, MessageSquare, Menu, X, Phone } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/src/lib/utils';
@@ -29,6 +30,7 @@ export default function Navbar() {
               <span className="text-2xl font-display font-bold bg-gradient-to-r from-brand-600 to-brand-700 bg-clip-text text-transparent">
                 PetCare Plus
               </span>
+              <HeartFilled className="text-brand-600 text-sm" />
             </Link>
           </div>
 
